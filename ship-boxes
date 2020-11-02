@@ -24,3 +24,10 @@ elif (remind_book * thickness_book % height_small == 0):
         print('Shipping',total,'boxes')
         print(num_large,'large')
         print(num_small,'small')
+        
+else:
+        num_small =int(remind_book * thickness_book / height_small)+1
+        total = num_large +num_small   
+        print('Shipping',total,'boxes')
+        print(num_large,'large')
+        print(num_small,'small')
