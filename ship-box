@@ -1,0 +1,4 @@
+height_big = float(input(''))
+height_small = float(input(''))
+thickness_book = float(input(''))
+num_books = int(input('')) 
