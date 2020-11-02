@@ -2,3 +2,8 @@ height_big = float(input(''))
 height_small = float(input(''))
 thickness_book = float(input(''))
 num_books = int(input('')) 
+
+if (height_small >= (thickness_book*num_books)):
+    print('Ship 1 small box')
+if height_big >= (thickness_book * num_books):
+    print('Ship 1 large box')
