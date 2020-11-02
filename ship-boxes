@@ -18,3 +18,9 @@ if (thickness_book * num_books > height_big) and (thickness_book * num_books > h
         print('Shipping',total,'boxes')
         print(num_large,'large')
         print(num_small,'small')
+elif (remind_book * thickness_book % height_small == 0):
+        num_small =remind_book * thickness_book / height_small
+        total = num_large +num_small   
+        print('Shipping',total,'boxes')
+        print(num_large,'large')
+        print(num_small,'small')
