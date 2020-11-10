@@ -5,3 +5,11 @@ customer_password=["Iz9*z$","Eu7#*%","Fv6&x","Ea0#5","Tw6!b8","Ye4&","Up2%)","Rk
 item_number=["K733","LO917","L223","O261","NQ813","TH851","YJ467","UN941","WR893","SD743","IL993","L761","NO204","GO642","BC571","TX31","NG108","AF977","SA868","A411","YJ195","YC871","NN896","D636","K233","BM608","L982","UO399","Y337","T397"]
 item_description=["Pens","Pencils","Markers","Highlighters","Paper clips","Tape","Rubber bands","Erasers","Stamp pads","Ink for stamp pads","Spiral notebooks","Writing pads","Post–it® notes","Phone message pads","Laser printer paper","Copy paper","Fax paper","Graph paper","Colored paper","Pocket notebook","Manila file folders","Hanging file folders","Pocket folders","File labels","Index dividers","Tabs","Letter envelopes","Catalog envelopes","Padded envelopes","Shipping paper"]
 item_price=[12.88,2.83,30.38,82.93,99.64,68.81,96.08,55.55,9.06,40.42,23.08,58.72,18.77,27.43,20.17,67.91,39.33,81.6,60.94,44.16,55.5,52.09,94.17,67.89,46.67,15.33,81.83,63.26,11.9,27.05]
+
+import re 
+import string
+
+request=input('')
+
+if request[:2] != 'NC' and request[:2] != 'NP' and request[:2] != 'CO':
+    print('Transaction type',request[:2],'is invalid.')
