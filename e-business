@@ -13,3 +13,7 @@ request=input('')
 
 if request[:2] != 'NC' and request[:2] != 'NP' and request[:2] != 'CO':
     print('Transaction type',request[:2],'is invalid.')
+
+number = int(request[2:7])  
+if (number in customer_number) == False:
+    print ('Customer number', request[2:7], 'is invalid.')
