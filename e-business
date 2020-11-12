@@ -25,3 +25,14 @@ if (number in customer_number) == False:
         index2 = [m.start() for m in re.finditer(r" ",request)][1]
         customer_name[i] = request[index2+1:] + ', ' + request[7:index2]
         print(customer_name)
+
+#NP10537AB2%Ce'#1   
+if (request[:2] == 'NP'):
+    if (len(request)<13) or (not request[7].isupper()) or (not request[8].islower()) or (not request[9].isnumeric()) or (not (request[10] in '!@#$%^&*()')):
+        print('New password not secure. Request denied.')
+    else:
+        number = int(request[2:7])  
+        if (number in customer_number) == True:
+            i= customer_number.index(int(request[2:7]))
+            customer_password[i] = request[7:]
+            print(customer_password)
