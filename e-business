@@ -41,3 +41,10 @@ if (request[:2] == 'CO'):
     number_item = request[7]
     if (int(number_item) == 1):
         line0=input('')
+#print('Order Date:     ' + request[8:10] +'/' + request[10:12] +'/' + request[12:17] )
+        date3 = request[8:10] +'/' + request[10:12] +'/' + request[12:17]
+        print('{:>10}'.format('Order Date:'), '{:>14}'.format(date3))
+        number = int(request[2:7])
+        if (number in customer_number) == True:
+            i= customer_number.index(int(request[2:7]))
+  
