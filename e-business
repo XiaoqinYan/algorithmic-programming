@@ -47,4 +47,6 @@ if (request[:2] == 'CO'):
         number = int(request[2:7])
         if (number in customer_number) == True:
             i= customer_number.index(int(request[2:7]))
-  
+            lc= request[2:7]
+            tc=customer_name[i]
+            print('{:>11}'.format('Customer:'), '{:>14}'.format(lc), '{:>29}'.format(tc)+ '\n')  
