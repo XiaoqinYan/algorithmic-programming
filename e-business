@@ -50,3 +50,9 @@ if (request[:2] == 'CO'):
             lc= request[2:7]
             tc=customer_name[i]
             print('{:>11}'.format('Customer:'), '{:>14}'.format(lc), '{:>29}'.format(tc)+ '\n')  
+            
+            print('{:^3}'.format('Ln#')+'   ' + '{:18}'.format('Item #')+ '{:28}'.format('Item Description')+ '{:^10}'.format('Req Date')+  '{:>11}'.format('Qty'), '{:>10}'.format('Price'), '{:>13}'.format('Total'))
+            indexspecial= line0.find('^')
+            indexsecond = len(line0) - 8
+            item = line0[indexspecial+1 : indexsecond -1]
+            
