@@ -55,4 +55,6 @@ if (request[:2] == 'CO'):
             indexspecial= line0.find('^')
             indexsecond = len(line0) - 8
             item = line0[indexspecial+1 : indexsecond -1]
-            
+            quality = line0[:indexspecial]
+            date = line0[indexsecond:]
+            i= item_number.index(item)
