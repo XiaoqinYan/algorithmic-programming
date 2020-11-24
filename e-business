@@ -58,3 +58,13 @@ if (request[:2] == 'CO'):
             quality = line0[:indexspecial]
             date = line0[indexsecond:]
             i= item_number.index(item)
+            
+            total_price = float(quality) * item_price[i]
+            describe = item_description[i]
+            total_priceround = round(total_price, 2)
+            lc= date[0:2]+'/'+date[2:4]+'/'+date[4:]
+            ldf =item_price[i]
+            #print('{:^3}'.format('Ln#')+'   ' + '{:18}'.format('Item #')+ '{:28}'.format('Item Description')+ '{:^10}'.format('Req Date')+  '{:>11}'.format('Qty'), '{:>10}'.format(ldf), '{:>13}'.format('Total'))
+            print(' 1   ', '{:17}'.format(item), '{:27}'.format(describe) , '{:^10}'.format(lc) ,  '{:>10}'.format(quality),  '{:>10}'.format(ldf), '  $', '{:>9}'.format("%.2f" % total_priceround)+'\n')   
+            print('                                                                           Total', '{:>17}'.format("%.2f" % total_priceround))
+            
