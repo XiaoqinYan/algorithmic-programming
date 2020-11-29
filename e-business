@@ -68,3 +68,11 @@ if (request[:2] == 'CO'):
             print(' 1   ', '{:17}'.format(item), '{:27}'.format(describe) , '{:^10}'.format(lc) ,  '{:>10}'.format(quality),  '{:>10}'.format(ldf), '  $', '{:>9}'.format("%.2f" % total_priceround)+'\n')   
             print('                                                                           Total', '{:>17}'.format("%.2f" % total_priceround))
             
+if (int(number_item) == 2):
+        line0=input('')
+        line1=input('')
+        date3 = request[8:10] +'/' + request[10:12] +'/' + request[12:17]
+        print('{:>10}'.format('Order Date:'), '{:>14}'.format(date3))
+        number = int(request[2:7])
+        if (number in customer_number) == True:
+            
