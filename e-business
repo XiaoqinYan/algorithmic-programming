@@ -92,3 +92,6 @@ i= customer_number.index(int(request[2:7]))
             total_price = float(quality) * item_price[t]
             describe = item_description[t]
             total_priceround = round(total_price, 2)
+            
+            lc= date[0:2]+'/'+date[2:4]+'/'+date[4:]
+            ldf =item_price[t]
