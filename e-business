@@ -114,8 +114,8 @@ i= customer_number.index(int(request[2:7]))
             #print(' 2    '+ item2 + '              '+ describe2 + '              ' + date2[0:2]+'/'+date2[2:4]+'/'+date2[4:] + '      '+ quality2 + '     ', item_price[t2], '  $'+"%.2f"%total_priceround2+'\n')
             print(' 2   ', '{:17}'.format(item2), '{:27}'.format(describe2) , '{:^10}'.format(lc2) ,  '{:>10}'.format(quality2),  '{:>10}'.format(ldf2), '  $'+ '{:>9}'.format("%.2f"%total_priceround2)+ '\n')   #"%.2f" % a
                         
-total = total_priceround + total_priceround2
+            total = total_priceround + total_priceround2
             
-#print('                                                                           Total       ', "%.2f"%total)
+            #print('                                                                           Total       ', "%.2f"%total)
             print('                                                                           Total', '{:>17}'.format("%.2f" % total))
             
