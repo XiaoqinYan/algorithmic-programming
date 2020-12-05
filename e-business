@@ -99,3 +99,12 @@ i= customer_number.index(int(request[2:7]))
             #print(' 1    '+ item + '             '+ describe + '                     '+ date[0:2]+'/'+date[2:4]+'/'+date[4:] + '        '+ quality + '      ', item_price[t], '  $   ', "%.2f"%total_priceround)
             print(' 1   ', '{:17}'.format(item), '{:27}'.format(describe) , '{:^10}'.format(lc) ,  '{:>10}'.format(quality),  '{:>10}'.format(ldf), '  $', '{:>9}'.format("%.2f" % total_priceround))   
             
+            indexspecial2= line1.find('^')
+            indexsecond2 = len(line1) - 8
+            item2 = line1[indexspecial2+1 : indexsecond2 -1]
+            quality2 = line1[:indexspecial2]
+            date2 = line1[indexsecond2:]
+            t2= item_number.index(item2)
+            describe2 = item_description[t2]
+            total_price2 = float(quality2) * item_price[t2]
+            total_priceround2 = round(total_price2, 2)
