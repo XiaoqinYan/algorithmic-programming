@@ -110,4 +110,7 @@ i= customer_number.index(int(request[2:7]))
             total_priceround2 = round(total_price2, 2)
             
             lc2= date2[0:2]+'/'+date2[2:4]+'/'+date2[4:]
-            ldf2 =item_price[t2]            
+            ldf2 =item_price[t2]     
+            #print(' 2    '+ item2 + '              '+ describe2 + '              ' + date2[0:2]+'/'+date2[2:4]+'/'+date2[4:] + '      '+ quality2 + '     ', item_price[t2], '  $'+"%.2f"%total_priceround2+'\n')
+            print(' 2   ', '{:17}'.format(item2), '{:27}'.format(describe2) , '{:^10}'.format(lc2) ,  '{:>10}'.format(quality2),  '{:>10}'.format(ldf2), '  $'+ '{:>9}'.format("%.2f"%total_priceround2)+ '\n')   #"%.2f" % a
+                        
