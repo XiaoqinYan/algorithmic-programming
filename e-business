@@ -116,3 +116,6 @@ i= customer_number.index(int(request[2:7]))
                         
 total = total_priceround + total_priceround2
             
+#print('                                                                           Total       ', "%.2f"%total)
+            print('                                                                           Total', '{:>17}'.format("%.2f" % total))
+            
