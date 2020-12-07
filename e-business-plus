@@ -1,1 +1,12 @@
 
+import csv
+
+
+cuslist =[]
+inventorylist=[]
+
+x1 = input('')
+x2= input('')
+
+list1=[]
+list2=[]
