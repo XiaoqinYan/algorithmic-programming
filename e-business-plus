@@ -17,3 +17,9 @@ with open(x1) as csvfile:
     for row in readCSV:
         cuslist.append(row)
     #print(cuslist)  
+
+with open(x2) as csvfile:
+    readCSV = csv.reader(csvfile)
+    for row in readCSV:
+        inventorylist.append(row)
+    #print(inventorylist)
