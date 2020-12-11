@@ -23,3 +23,9 @@ with open(x2) as csvfile:
     for row in readCSV:
         inventorylist.append(row)
     #print(inventorylist)
+    
+    x3 = input('')  
+f = open(x3)  # create file object
+contents_order = f.read()  # read file text into a string
+orderlist = contents_order.split('\n')
+    #print(orderlist)
