@@ -38,3 +38,17 @@ itemlist = []
 datesecond=[]
 itemline=[]
 totalnum=[]
+
+
+for i in range(len(orderlist)):
+    no = orderlist[i][2:7]
+    if (no.isdigit() == True):
+        nolist.append(no)
+        datelist.append(orderlist[i][11:])
+        indicatorlist.append(orderlist[i][10])
+        totalnum.append(int(orderlist[i][7:10]))
+    else:
+        #qtylist.append(orderlist[i][0:3])
+        #itemlist.append(orderlist[i][4:9])
+        #datesecond.append(orderlist[i][10:])
+        itemline.append(orderlist[i])
