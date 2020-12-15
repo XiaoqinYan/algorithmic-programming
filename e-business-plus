@@ -29,3 +29,12 @@ f = open(x3)  # create file object
 contents_order = f.read()  # read file text into a string
 orderlist = contents_order.split('\n')
     #print(orderlist)
+
+nolist=[] 
+datelist=[]
+indicatorlist=[]
+qtylist =[]
+itemlist = []
+datesecond=[]
+itemline=[]
+totalnum=[]
