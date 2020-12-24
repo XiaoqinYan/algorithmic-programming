@@ -56,3 +56,12 @@ itemline2=[]
 for i in range(len(itemline)):
     newitemline = itemline[i].split('^')
     itemline2.append(newitemline)
+    
+    finalqty =[] 
+noitem =[]
+date2 = []
+for i in range(len(itemline2)-1):
+    finalqty.append(int(itemline2[i][0]))
+    noitem.append(itemline2[i][1])
+    date2.append(itemline2[i][2])
+    
