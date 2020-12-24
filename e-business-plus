@@ -65,3 +65,7 @@ for i in range(len(itemline2)-1):
     noitem.append(itemline2[i][1])
     date2.append(itemline2[i][2])
     
+date3list=[]
+for i in range(len(date2)):
+    date3= date2[i][:2]+'/'+date2[i][2]+date2[i][3]+'/'+ date2[i][4:]
+    date3list.append(date3)
