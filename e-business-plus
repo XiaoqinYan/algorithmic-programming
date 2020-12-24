@@ -97,3 +97,14 @@ for i in range(len(noitem)):
 numlist=[]
 for i in range(len(cuslist)):
     numlist.append(cuslist[i][0])
+    
+    namelist=[] 
+balancelist=[]
+for i in range(len(nolist)):
+    for j in range(len(numlist)):
+        if(nolist[i] == numlist[j]):
+            namelist.append(cuslist[j][1])
+            balancelist.append(float(cuslist[j][2]))
+    if( (nolist[i] in numlist) == False ):
+        namelist.append('')
+        balancelist.append(0.00)
