@@ -73,3 +73,12 @@ newdate=[]
 for i in range(len(datelist)):
     newdatt = datelist[i][:2]+'/'+datelist[i][2]+datelist[i][3]+'/'+ datelist[i][4:]
     newdate.append(newdatt)
+
+itemname=[]  
+pricelist=[]
+
+
+invlist=[]
+for j in range(len(inventorylist)):
+    inv = inventorylist[j][0]
+    invlist.append(inv)
