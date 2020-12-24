@@ -130,3 +130,14 @@ for i in range(len(nolist)):
 
     
 #print(finalqty)
+
+def cutlist(a, b):#a is long, b is short
+    newdata3 = a
+    listfinal2=[]
+    for i in range(len(b)):
+        listfinal=[]
+        for j in range(b[i]):
+            x = a.pop(0)
+            listfinal.append(x)
+        listfinal2.append(listfinal)
+    return listfinal2
