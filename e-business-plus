@@ -52,3 +52,7 @@ for i in range(len(orderlist)):
         #itemlist.append(orderlist[i][4:9])
         #datesecond.append(orderlist[i][10:])
         itemline.append(orderlist[i])
+itemline2=[]
+for i in range(len(itemline)):
+    newitemline = itemline[i].split('^')
+    itemline2.append(newitemline)
