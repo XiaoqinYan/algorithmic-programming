@@ -92,3 +92,8 @@ for i in range(len(noitem)):
     if ((noitem[i] in invlist) == False):
         itemname.append('*** Item not found ***')
         pricelist.append(0.00)
+
+
+numlist=[]
+for i in range(len(cuslist)):
+    numlist.append(cuslist[i][0])
