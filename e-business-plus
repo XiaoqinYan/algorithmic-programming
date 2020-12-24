@@ -82,3 +82,13 @@ invlist=[]
 for j in range(len(inventorylist)):
     inv = inventorylist[j][0]
     invlist.append(inv)
+    
+for i in range(len(noitem)):
+    for j in range(len(inventorylist)):
+        if (noitem[i] == inventorylist[j][0]):
+            itemname.append(inventorylist[j][1])
+            pricelist.append(float(inventorylist[j][2]))
+            
+    if ((noitem[i] in invlist) == False):
+        itemname.append('*** Item not found ***')
+        pricelist.append(0.00)
