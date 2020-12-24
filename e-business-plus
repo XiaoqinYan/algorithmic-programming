@@ -69,3 +69,7 @@ date3list=[]
 for i in range(len(date2)):
     date3= date2[i][:2]+'/'+date2[i][2]+date2[i][3]+'/'+ date2[i][4:]
     date3list.append(date3)
+newdate=[]
+for i in range(len(datelist)):
+    newdatt = datelist[i][:2]+'/'+datelist[i][2]+datelist[i][3]+'/'+ datelist[i][4:]
+    newdate.append(newdatt)
