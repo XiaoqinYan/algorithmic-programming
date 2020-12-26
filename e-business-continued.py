@@ -245,3 +245,21 @@ for i in range(len(namelist)):
                  #print("{:^3}   {:<18}{:<28}{:^10}{:>11}{:>11}{:>4}{:>10}".format(j+1,list2[i][j], list1[i][j], list5[i][j], list3[i][j],list4[i][j], list3[i][j]*list4[i][j]))
                  #print("{:^3}   {:<18}{:<28}{:^10}{:>11}{:>11}{:>14}".format(j+1,list2[i][j], list1[i][j], list5[i][j], list3[i][j],list4[i][j], "Total")
                  print("{:^3d}   {:<18}{:<28}{:^10}{:>11d}{:>11.2f}   ${:>10.2f}".format(j+1,list2[i][j], list1[i][j], list5[i][j], list3[i][j],list4[i][j],total[i][j]))
+print('\n'+ "{:>80}{:>18.2f}".format('Total Ordered:', totalordered[i]))
+            print("{:>80}{:>18.2f}".format('Balance:', balancelist2[i])+'\n')
+            print("{:>80}{:>18.2f}".format('Total Due:', totaldue2[i]))
+            print('---------------')
+            
+    elif(indicatorlist[i] == 'S'):
+        if ((nolist[i] in  numlist)== False):
+            print("Customer number", nolist[i], "is invalid." )
+            print('---------------')
+        else:
+            print("Order Date:{:>15}".format(newdate[i]))
+            print("  Customer:{:>15}{:>30}".format(nolist[i], namelist[i])+ '\n')
+
+            print("{:>80}{:>18.2f}".format('Total Ordered:', totalordered[i]))
+            print("{:>80}{:>18.2f}".format('Balance:', balancelist2[i])+ '\n')
+           
+            print("{:>80}{:>18.2f}".format('Total Due:', totaldue2[i]))
+            print('---------------')       
