@@ -154,3 +154,14 @@ noitem1 = noitem
 date3list1=date3list 
 pricelist1=pricelist
 itemname1 = itemname
+
+list3 =cutlist(finalqty1, totalnum)
+#print(newfinalqty)
+list2 = cutlist(noitem1, totalnum)
+#print(cutlist)
+list5 = cutlist(date3list1, totalnum)
+#print(newdate3list)
+list4 =cutlist(pricelist1, totalnum)
+#print(newpricelist)
+list1 =cutlist(itemname1, totalnum)
+#print(itemnamenew)
