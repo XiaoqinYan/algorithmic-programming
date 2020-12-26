@@ -141,3 +141,10 @@ def cutlist(a, b):#a is long, b is short
             listfinal.append(x)
         listfinal2.append(listfinal)
     return listfinal2
+def buildlist(a):
+  newlist =[]
+  for i in range(len(a)):
+    for j in range(len(a[i])):
+      newlist.append(a[i][j])
+
+  return newlist
