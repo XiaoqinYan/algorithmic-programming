@@ -176,3 +176,7 @@ total2=[]
 for i in range(len(finalqty)):
     new = finalqty[i]* pricelist[i]
     total2.append(new)
+    
+    #print(total2)
+totalordered = []
+total = cutlist(total2, totalnum)
