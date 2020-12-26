@@ -180,3 +180,8 @@ for i in range(len(finalqty)):
     #print(total2)
 totalordered = []
 total = cutlist(total2, totalnum)
+
+
+for i in range(len(total)):
+  sum1 =sum(total[i])
+  totalordered.append(sum1)
