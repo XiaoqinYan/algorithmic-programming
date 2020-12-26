@@ -185,3 +185,12 @@ total = cutlist(total2, totalnum)
 for i in range(len(total)):
   sum1 =sum(total[i])
   totalordered.append(sum1)
+
+    
+ #print(totalordered)
+
+
+totaldue21 = []
+for i in range(len(totalordered)):
+  totaldue1 = totalordered[i]+ balancelist[i]
+  totaldue21.append(totaldue1)
