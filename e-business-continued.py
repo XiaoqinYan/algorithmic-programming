@@ -148,3 +148,9 @@ def buildlist(a):
       newlist.append(a[i][j])
 
   return newlist
+finalqty1=[]
+finalqty1 =finalqty
+noitem1 = noitem
+date3list1=date3list 
+pricelist1=pricelist
+itemname1 = itemname
