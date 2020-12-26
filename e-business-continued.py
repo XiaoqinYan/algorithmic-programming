@@ -171,3 +171,8 @@ finalqty = buildlist(list3)
 #print(finalqty)
 
 pricelist = buildlist(list4)
+
+total2=[]
+for i in range(len(finalqty)):
+    new = finalqty[i]* pricelist[i]
+    total2.append(new)
