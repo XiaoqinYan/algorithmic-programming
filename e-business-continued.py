@@ -165,3 +165,9 @@ list4 =cutlist(pricelist1, totalnum)
 #print(newpricelist)
 list1 =cutlist(itemname1, totalnum)
 #print(itemnamenew)
+
+
+finalqty = buildlist(list3)
+#print(finalqty)
+
+pricelist = buildlist(list4)
