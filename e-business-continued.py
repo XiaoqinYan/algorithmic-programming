@@ -231,3 +231,17 @@ for i in range(len(totalordered)):
 #['LO917', 'IL993', 'LO917', 'IL993', 'AF977', 'L223', 'IL993', 'Y337', 'O261', 'LM485', 'N669', 'P530', 'IL993', 'UN941', 'W555', 'TH851', 'O662', 'Q25', 'IW804', 'UC428', 'YJ195', 'UN941', 'O646', 'K233', 'NG108', 'F603', 'NQ813', 'NO204', 'YC871', 'L223', 'F603', 'TH851', 'TD834', 'N669', 'IW804', 'NQ813', 'W555', 'K733', 'PX218', 'PX218', 'Q25', 'T5333', 'R207', 'TD834']
 #print(finalqty)
 #[125, 235, 125, 235, 194, 72, 370, 258, 253, 139, 113, 249, 479, 463, 14, 173, 298, 33, 360, 354, 135, 72, 238, 116, 211, 323, 222, 258, 434, 11, 172, 354, 414, 246, 197, 31, 178, 38, 475, 112, 456, 447, 402, 229]
+
+for i in range(len(namelist)):
+    if(indicatorlist[i] == 'D'):
+        if ((nolist[i] in  numlist) == False):
+            print("Customer number", nolist[i], "is invalid." )
+            print('---------------')
+        else:
+            print("Order Date:{:>15}".format(newdate[i]))
+            print("  Customer:{:>15}{:>30}".format(nolist[i], namelist[i])+ '\n')
+            print("{:^3}   {:<18}{:<28}{:^10}{:>11}{:>11}{:>14}".format("Ln#","Item #", "Item Description", "Req Date", "Qty","Price", "Total"))
+            for j in range(len(list1[i])):
+                 #print("{:^3}   {:<18}{:<28}{:^10}{:>11}{:>11}{:>4}{:>10}".format(j+1,list2[i][j], list1[i][j], list5[i][j], list3[i][j],list4[i][j], list3[i][j]*list4[i][j]))
+                 #print("{:^3}   {:<18}{:<28}{:^10}{:>11}{:>11}{:>14}".format(j+1,list2[i][j], list1[i][j], list5[i][j], list3[i][j],list4[i][j], "Total")
+                 print("{:^3d}   {:<18}{:<28}{:^10}{:>11d}{:>11.2f}   ${:>10.2f}".format(j+1,list2[i][j], list1[i][j], list5[i][j], list3[i][j],list4[i][j],total[i][j]))
