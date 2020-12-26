@@ -194,3 +194,14 @@ totaldue21 = []
 for i in range(len(totalordered)):
   totaldue1 = totalordered[i]+ balancelist[i]
   totaldue21.append(totaldue1)
+
+    
+  #print(totaldue21)
+
+balancelist2 = balancelist
+for i in range(len(namelist)-1):
+    for j in range(i+1, len(namelist)):
+        if (namelist[i]==namelist[j]):
+            balancelist2[j] = totalordered[i]+ balancelist2[i]
+#print(balancelist2)
+  
