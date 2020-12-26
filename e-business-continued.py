@@ -205,3 +205,7 @@ for i in range(len(namelist)-1):
             balancelist2[j] = totalordered[i]+ balancelist2[i]
 #print(balancelist2)
   
+totaldue2 = []
+for i in range(len(totalordered)):
+  totaldue1 = totalordered[i]+ balancelist2[i]
+  totaldue2.append(totaldue1)
